@@ -1,7 +1,6 @@
 --- # My First YAML playbook
-- hosts: all      
-  user: ansible
-  sudo: yes              
+- hosts: Test     
+  user: root             
   connection: ssh
   gather_facts: no
   tasks:
