@@ -1,6 +1,6 @@
 # Check the physical disk memory 128 MB and free disk 256 MB
  - name: check the physical memory
-    command: vmstat -s
+    command: free -g
     register: phy_mem
          
 
