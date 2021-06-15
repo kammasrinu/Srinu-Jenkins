@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: Test
   become: yes
   tasks:
   - name: Install Nginx Latest
