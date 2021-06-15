@@ -1,12 +1,6 @@
---- # My First YAML playbook
-- hosts: Test     
-tasks:
-   -name: install
-    become: true
-    become_user: root
-  yum:
-    state: present
-   name:
-     -httpd
+# Check the physical disk memory 128 MB and free disk 256 MB
+ - name: check the physical memory
+   command: vmstat -s
+   register: phy_mem
          
 
